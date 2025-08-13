@@ -1,0 +1,38 @@
+ALGORITHM algorithm_name
+VAR
+    tab :M1 : ARRAY_OF INTEGER[M];
+     tab :M2 : ARRAY_OF INTEGER[N];
+     INTEGER i;
+     INTEGER j;
+     INTEGER M N;
+BEGIN
+s=0;
+M=50; N=50;
+
+FOR i FROM 1 TO MSTEP step  DO
+    j=1;
+    WHILE (M1[i]<>M2[J]) DO
+        j++;
+    END_WHILE
+ 
+    if ( j>max)
+         s=s+M1[i];
+    endif
+
+ END_FOR
+j=0;
+
+ FOR j FROM 1 TO N STEP step  DO
+    i=1;
+    WHILE (M1[i]<>M2[J]) DO
+        i++;
+      
+    END_WHILE
+ 
+    if ( i>max)
+         s=s+M2[j];
+    endif
+ END_FOR
+
+
+END
